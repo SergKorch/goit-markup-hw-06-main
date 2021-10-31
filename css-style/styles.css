@@ -855,3 +855,30 @@ background: #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.1);
 box-sizing: border-box;
 }
+.icon-send {
+  fill: var(--primary-background-color);
+  margin-left: 10px;
+}
+.send-block
+{
+  display: inline-block;
+  width: 570px;
+height: 86px;
+margin-top: 72px;
+margin-bottom: 94px;
+margin-left: 93px;
+}
+.send-block .social-text-footer {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.send-footer {
+  display: inline-block;
+  width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+opacity: 0.1;
+}

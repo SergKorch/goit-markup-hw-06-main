@@ -77,18 +77,23 @@
                 <label class="form-field">
                   <span class="text-form-field">Имя</span>                   
                   <input class="modal-input" type="text" name="name-modal" />
-                  <img class="icon-modal" src="./images/person.svg" alt="">
+                                <svg class="icon-modal" width="20" height="20">
+                    <use href="./images/icons.svg#icon-person"></use></svg
+                >
                 </label>
                 <label class="form-field">
                   <span class="text-form-field">Телефон</span> 
                   <svg class="icon-modal" width="20" height="20">
-                    <use href="./images/phone.svg"></use></svg
+                    <use href="./images/icons.svg#icon-phone"></use></svg
                 >
                   <input class="modal-input" type="tell" name="tell-modal" />
                 </label>
                 <label class="form-field">
                   <span class="text-form-field">Почта</span> 
-                  <img class="icon-modal" src="./images/email.svg" alt="">
+                 
+                  <svg class="icon-modal" width="20" height="20">
+                    <use href="./images/icons.svg#icon-email"></use></svg
+                >
                   <input class="modal-input" type="mail" name="mail-modal" />
                 </label>
                 <label class="form-field">
@@ -103,7 +108,7 @@
                   Соглашаюсь с рассылкой и принимаю Условия договора
                 </label>
                 
-                <button type="submit" class="button-hero" data-modal-open>
+                <button type="submit" class="button-hero button-modal" data-modal-open>
                   Отправить
                 </button>
               </div>
@@ -439,12 +444,13 @@
         <div class="send-block">
           <label >
             <span class="social-text-footer">Подпишитесь на рассылку</span>
+            <div class="send-area">
           <input type="email" name="footer-email"  placeholder="E-mail" class="send-footer">
-          <button type="button" class="button-hero">
+          <button type="submit" class="button-send">
             Подписаться<svg class="icon-send" width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use></svg
           ></a>
-          </button>
+          </button></div>
         </label>
         </div>
       </div>

@@ -770,40 +770,39 @@ body {
 }
 .modalka-text {
   display: block;
+  padding-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  margin-top: 0px;
 }
 .modal-input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
 }
 .icon-modal {
-  display: inline-block;
   position: absolute;
   left: 12px;
-  top: 50%;
-  width: 18px;
-  height: 18px;
+  top: 29px;
   fill: var(--primary-text-color);
+  transition-property: fill;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--cibic-animation);
 }
 .area-modalka {
   display: block;
-  margin-top: 12px;
-  margin-bottom: 40px;
-  margin-left: 41px;
-  margin-right: 39px;
+  margin: 0px 40px 40px 40px;
 }
 .form-field {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 .form-comment {
   display: block;
@@ -822,17 +821,14 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* identical to box height, or 171% */
-
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
 .text-form-field {
   display: block;
   text-align: left;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -847,16 +843,28 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-/* .modal-input:placeholder-shown .icon-modal {
+/* .form-field:focus-within {
+  background: #ff8;
+  color: black;
   border: 1px solid var(--link);
   fill: var(--link);
-}
-.modal-input:not(placeholder-shown) {
-  fill: var(--link);
-}  */
-/* .form-label:focus-within {
-
 } */
+ /* .modal-input:focus + .icon-modal {
+  border: 1px solid var(--link);
+  fill: var(--link);
+  color: #2196f3;
+} */
+.modal-input:focus {
+  outline: none;
+
+}  
+.modal-input:focus:not(:placeholder-shown){
+  border: 1px solid var(--link);
+}
+.modal-input:focus:not(:placeholder-shown) + .icon-modal {
+  fill: var(--link);
+}
+
 
 .button-modal {
   margin-top: 30px;

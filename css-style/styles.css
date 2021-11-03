@@ -435,7 +435,7 @@ body {
 .address {
   display: block;
   width: 231px;
-height: 81px;
+  height: 81px;
   font-style: normal;
   margin-right: auto;
   margin-left: 15px;
@@ -760,7 +760,7 @@ height: 81px;
   justify-content: center;
   fill: var(--primary-text-color);
 }
-.icon-close:hover, 
+.icon-close:hover,
 .icon-close:focus {
   fill: var(--link);
 }
@@ -852,11 +852,11 @@ height: 81px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-textarea:focus { 
+textarea:focus {
   outline: none;
   border-color: var(--link);
 }
-textarea{
+textarea {
   transform: border-color;
   transition-duration: var(--text-hero-footer);
   transition-timing-function: var(--cibic-animation);
@@ -864,9 +864,8 @@ textarea{
 
 .modal-input:focus {
   outline: none;
-
-}  
-.modal-input:focus:not(:placeholder-shown){
+}
+.modal-input:focus:not(:placeholder-shown) {
   border: 1px solid var(--link);
 }
 .modal-input:focus:not(:placeholder-shown) + .icon-modal {
@@ -875,12 +874,11 @@ textarea{
 
 .agreement-form {
   display: inline-block;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--section-comand-portfolio-navig-text);
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--section-comand-portfolio-navig-text);
 }
 .button-modal {
   margin-top: 20px;
@@ -890,8 +888,7 @@ color: var(--section-comand-portfolio-navig-text);
   height: 30px;
   left: 1025px;
   top: 229px;
-
-  background: #ffffff;
+  background: var(--primary-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
@@ -902,10 +899,10 @@ color: var(--section-comand-portfolio-navig-text);
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cibic-animation);
 }
- .send-block {
+.send-block {
   display: inline-block;
   margin-top: 20px;
-} 
+}
 
 .send-footer {
   display: inline-flex;
@@ -959,25 +956,24 @@ color: var(--section-comand-portfolio-navig-text);
 .send-container {
   padding-left: 93px;
 }
-.icon-chek  {
+.icon-chek {
   position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-left: 0px;
-border: 3px solid black;
-border-radius: 2px;
-top: 4.5px;
-width: 16px;
-height: 15px;
-
+  left: 0px;
+  border: 3px solid black;
+  border-radius: 2px;
+  top: 4.5px;
+  width: 16px;
+  height: 15px;
+  margin-top: 20px;
 }
 .text-finish:checked + .icon-chek {
   top: 4.5px;
   width: 16px;
-height: 15px;
+  height: 15px;
   background-color: var(--link);
   border-radius: 4px;
   border-color: var(--link);
-  
-} 
+}
